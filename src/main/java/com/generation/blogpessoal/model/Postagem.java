@@ -18,7 +18,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity//Transforma o objeto postagem em uma tabela no banco de dados
 
-@Table(name = "tb_postagem") //Renomeia a tabela no banco de dados
+@Table(name = "postagem") //Renomeia a tabela no banco de dados
 public class Postagem {
 	
 	@Id
