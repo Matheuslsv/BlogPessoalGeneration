@@ -18,7 +18,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity//Transforma o objeto postagem em uma tabela no banco de dados
 
-@Table(name = "postagem") //Renomeia a tabela no banco de dados
+@Table(name = "tb_postagem") //Renomeia a tabela no banco de dados
 public class Postagem {
 	
 	@Id
@@ -34,7 +34,7 @@ public class Postagem {
 	private String texto;
 	
 	@UpdateTimestamp //Pega automaticamente hora e data do pc
-	private Date data;
+	private Date data = new java.sql.Date(System.currentTimeMillis());
 	/*
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date date = new java.sql.Date(System.currentTimeMillis());
@@ -87,14 +87,6 @@ public class Postagem {
 
 	public void setTema(Tema tema) {
 		this.tema = tema;
-	}
-
-	public Usuario getUsuario() {
-		return usuario;
-	}
-
-	public void setUsuario(Usuario usuario) {
-		this.usuario = usuario;
 	}
 
 }

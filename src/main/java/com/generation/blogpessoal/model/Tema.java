@@ -15,7 +15,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 
 @Entity
-@Table(name = "tema")
+@Table(name = "tb_tema")
 public class Tema {
 	
 	@Id

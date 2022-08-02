@@ -18,7 +18,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 @Entity
-@Table(name = "usuario")
+@Table(name = "tb_usuario")
 public class Usuario {
 	
 	@Id
@@ -30,7 +30,7 @@ public class Usuario {
 	private String nome;
 	
 	@Size(min = 5, max = 100)
-	@Schema(example = "email@email.com.br")
+	@Schema(example = "email@email.com")
 	@NotNull(message = "O atributo Usuário é Obrigatório!")
 	@Email(message = "O atributo Usuário deve ser um email válido!")
 	private String usuario;
