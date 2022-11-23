@@ -7,8 +7,10 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import com.generation.blogpessoal.model.Usuario;
 
+@SuppressWarnings("serial")
 public class UserDetailsImpl implements UserDetails {
 	
+	@SuppressWarnings("unused")
 	private static final long serialVerionUID = 1L;
 	
 	private String userName;

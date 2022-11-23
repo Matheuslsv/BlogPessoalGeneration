@@ -16,6 +16,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @EnableWebSecurity
 public class BasicSecurityConfig extends WebSecurityConfigurerAdapter {
 	
+	@SuppressWarnings("unused")
 	@Autowired
 	private UserDetailsService userDetailsService;
 	

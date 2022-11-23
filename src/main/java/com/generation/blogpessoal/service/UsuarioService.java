@@ -20,7 +20,6 @@ public class UsuarioService {
 	@Autowired
 	private UsuarioRepository usuarioRepository;
 
-	// cadastrando user
 	public Optional<Usuario> cadastrarUsuario(Usuario usuario) {
 		if (usuarioRepository.findByUsuario(usuario.getUsuario()).isPresent())
 			Optional.empty();
@@ -29,7 +28,6 @@ public class UsuarioService {
 
 	}
 
-	// criptograandos senha
 	@SuppressWarnings("unused")
 	private String criptografarSenha(String senha) {
 		BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
